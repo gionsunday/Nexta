@@ -6,4 +6,4 @@ const ViewPrompts = () => {
   )
 }
 
-c
+export default ViewPrompts

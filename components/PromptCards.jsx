@@ -9,6 +9,10 @@ import { usePathname, useRouter } from "next/navigation"
 const PromptCards = ({post, handleTagClick, 
   handleEdit, handleDelet}) => {
     const [copied, setCopied] = useState('')
+    console.log(post.creator)
+    const {email, image} = post.creator
+    console.log(image)
+
 
     const handleCopy = () =>{
       setCopied(post.prompt)
@@ -24,8 +28,8 @@ const PromptCards = ({post, handleTagClick,
         <div className="flex-1 flex justify-start 
         items-center gap-3 cursor-pointer">
           <Image 
-          src={post.creator.image}
-          alt="iser-image"
+          src={image}
+          alt="user-image"
           width={40}
           height={40}
           className="rounded-full object-contain"

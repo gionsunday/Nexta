@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import {useState, useEffect} from 'react'
 import { useSession } from 'next-auth/react'
@@ -30,10 +30,10 @@ useEffect(() =>{
 
    }
   return (
-    <MyProfile 
+    <Profile 
     name = "My"
     desc="Welcome to your personalized profile page"
-    data={[posts]}
+    data={posts}
     handleEdit={handleEdit}
     handleDelete={handleDelete}
     />
