@@ -2,6 +2,7 @@ import PromptCards from "./PromptCards"
 
 const Profile = ({ name, desc, data,
   handleEdit, handleDelete }) => {
+    console.log(data)
   return (
     <section className="w-full">
       <h1 className="head_text text-left">
