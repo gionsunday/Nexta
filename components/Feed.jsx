@@ -30,7 +30,9 @@ const Feed = () => {
       
       setPosts(data)
     }
-    fetchPost()
+    setInterval(() =>{
+      fetchPost()
+    }, 3000)
 
     
   }, [])
