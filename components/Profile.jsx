@@ -20,7 +20,6 @@ const Profile = ({ name, desc, email, data,
       
      
       <div className="mt-10 prompt_layout">
-      <h1 className="blue_gradient text-center">Prompts</h1>
         {data.map((post) => (
           <PromptCards
             key={post._id}
