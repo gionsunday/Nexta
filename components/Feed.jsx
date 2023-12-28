@@ -74,9 +74,9 @@ const Feed = () => {
   }
   useEffect(() =>{
    
-    setInterval(() =>{
+    
       fetchPost()
-    setSearchResults(posts)    }, 3000)
+    setSearchResults(posts)   
 
    
   }, [])
